@@ -1,4 +1,4 @@
-,Personal_Income,Credit_Limit,Credit_Rating,Number_of_Cards,Age,Education_Years,Gender,Student,Married,Ethnicity,Credit_Balance
+ID,Personal_Income,Credit_Limit,Credit_Rating,Number_of_Cards,Age,Education_Years,Gender,Student,Married,Ethnicity,Credit_Balance
 0,16.28,1160,300,3,78,13,Male,Yes,Yes,African American,5
 1,44.47,3500,300,3,81,16,Female,No,No,African American,8
 2,88.83,4952,360,4,86,16,Female,No,Yes,Caucasian,15
