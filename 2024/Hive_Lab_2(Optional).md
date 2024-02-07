@@ -1,13 +1,13 @@
 # BDI Hive Lab 2 with NBA data (optional)
 
 ## Step 1: Downloading Data from GitHub
-### Objective: Retrieve the NBA data files from GitHub.
+### Objective: Retrieve the NBA data files from GitHub. 
 ```
 wget  https://raw.githubusercontent.com/zilonguiuc/BADM211/main/NBA/ranking.csv
 wget  https://raw.githubusercontent.com/zilonguiuc/BADM211/main/NBA/team.csv
 ```
 ## Step 2: Uploading Data to HDFS (Hadoop Distributed File System)
-### Objective: Store the downloaded data in HDFS.
+### Objective: Store the downloaded data in HDFS. (Replace [username] to your own username)
 ``` 
 hdfs dfs -mkdir /user/[username]/nba_data
 hdfs dfs -put ranking.csv /user/[username]/nba_data/ranking.csv
