@@ -1,4 +1,4 @@
-
+# BDI Hive Lab 2 with NBA data (optional)
 
 ## Step 1: Downloading Data from GitHub
 ### Objective: Retrieve the NBA data files from GitHub.
