@@ -66,7 +66,7 @@ db.player_game.find({ PTS : { $gt: 20 }, BLK: { $gt:  5} })
 db.player_game.find({ $or: [ { PTS: { $gt: 20 } }, { BLK: { $lt: 10 } } ] })
 ```
 
-## Using Projections, silimar to select columns in SQL:
+## Using Projections, similar to select columns in SQL:
 **returns players who scored more than 20 points, but only displays their names (PLAYER_NAME) and points (PTS)**
 ```
 db.player_game.find({ PTS: { $gt: 20 } }, { PLAYER_NAME: 1, PTS: 1 })
