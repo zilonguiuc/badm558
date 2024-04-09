@@ -14,6 +14,7 @@ https://raw.githubusercontent.com/zilonguiuc/BADM211/main/NBA/player_game.csv
     - Click it and select `Import File`.
 5. **Choose the data file** (JSON or CSV) you want to import. 
     - Configure the options accordingly and click `Import`.
+    - Choose the datatype for each field
 ## Switch database to nba
 ```
 use nba
