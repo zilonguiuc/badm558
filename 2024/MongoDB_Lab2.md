@@ -184,7 +184,7 @@ db.player_game.updateOne({ GAME_ID: "21900895", PLAYER_ID: "202083" }, { $set: {
 ## Inserting Nested Documents: 
 **Inserts a document with a nested location field. The second query finds games played in "NBA City".**
 ```
-db.games.insertOne({
+db.player_game.insertOne({
     GAME_ID: "12345678",
     TEAM_ID: 101
     PLAYER_ID: 101
@@ -201,7 +201,7 @@ db.games.insertOne({
 ## Query Nested Documents: 
 **finds games played in "NBA City".**
 ```
-db.games.find({ "location.city": "ClevelandCleveland" })
+db.player_game.find({ "location.city": "ClevelandCleveland" })
 ```
 ## Diagnostics:
 **This explains the query plan for fetching players who scored more than 20 points.**
@@ -213,7 +213,7 @@ db.player_game.find({ PTS: { $gt: 20 } }).explain()
 
 **Joins the player_game collection with the team  collection based on team_id and places the result in the player_team_details array.**
 ```
-db.games.aggregate([
+db.player_game.aggregate([
   {
     $lookup: {
         from: "team",
