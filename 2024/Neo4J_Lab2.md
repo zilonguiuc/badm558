@@ -5,6 +5,9 @@
 
 ### Import Data
 **Import the data into Neo4j as nodes with label Player, and each player has a relationship PLAYS_FOR to a node with label Team.**
+
+https://raw.githubusercontent.com/zilonguiuc/BADM211/main/NBA/player_team.csv
+
 ```
 LOAD CSV WITH HEADERS FROM 'file:///player_team.csv' AS line
 MERGE (p:Player {PLAYER_ID: line.PLAYER_ID})
