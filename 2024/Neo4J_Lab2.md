@@ -67,9 +67,11 @@ RETURN p.PLAYER_NAME;
 
 ### Combining AND and OR:
 **Show players who played in 2019 for a specific team or those who played in 2020 for another team:**
+```
 MATCH (p:Player)-[:PLAYS_FOR]->(t:Team)
 WHERE (p.SEASON = 2019 AND t.TEAM_ID = '1610612762') OR (p.SEASON = 2020 AND t.TEAM_ID = '1610612763')
 RETURN p.PLAYER_NAME;
+```
 
 ### Filtering by Range:
 **To get players who played between 2018 and 2020:**
