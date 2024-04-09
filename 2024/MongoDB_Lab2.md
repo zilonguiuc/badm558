@@ -1,6 +1,7 @@
 # MongoDB Lab 2
 # 1.Basic Operations:
 These are standard CRUD (Create, Read, Update, Delete) operations and other fundamental operations
+**Case sensitive for variable name in  MongoDB**
 
 ## Loading Data (NBA data player_game.csv) into MongoDB
 
