@@ -140,8 +140,11 @@ db.player_game.aggregate([
 ## Text Search:  
 **The first line creates a text index on the COMMENT field. The second query is a placeholder to find documents with a specific text "coach" within the COMMENT field**
 
-db.games.createIndex({ COMMENT: "text" })
-db.games.find({ $text: { $search: "coach" } })
+```
+db.player_game.createIndex({ COMMENT: "text" })
+
+db.player_game.find({ $text: { $search: "coach" } })
+```
 
 **We can also search the comments containing coach use regular expression but it is much slower for big data**
 db.games.find({ COMMENT: /^coach/i })
