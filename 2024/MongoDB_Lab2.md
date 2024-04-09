@@ -53,7 +53,7 @@ db.player_game.find({ PTS_: { $gt: 20, $lt: 30 } })
 ```
 **Find players who started in the Center (C) position:**
 ```
-db.player_game.find({ start_position: "C" })
+db.player_game.find({ START_POSITION: "C" })
 ```
 ## Query result with and OR
 **Find Players who Scored More than 20 Points and had More than 5 Blocks in a Game**
