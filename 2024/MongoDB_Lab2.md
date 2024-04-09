@@ -186,16 +186,17 @@ db.player_game.updateOne({ GAME_ID: "21900895", PLAYER_ID: "202083" }, { $set: {
 ```
 db.player_game.insertOne({
     GAME_ID: "12345678",
-    TEAM_ID: 101
-    PLAYER_ID: 101
-    PTS: 10
+    TEAM_ID: 101,
+    PLAYER_ID: 101,
+    PTS: 10,
     location: {
         stadium: "Progressive Arena",
         city: "ClevelandCleveland",
         state: "OH",
         zip: "61822"
     }
-})
+});
+
 ```
 
 ## Query Nested Documents: 
@@ -209,7 +210,7 @@ db.player_game.find({ PTS: { $gt: 20 } }).explain()
 
 ## Join with another collection
 **First create another collection called team and load the data.**
-
+https://raw.githubusercontent.com/zilonguiuc/BADM211/main/NBA/team.csv
 
 **Joins the player_game collection with the team  collection based on team_id and places the result in the player_team_details array.**
 ```
@@ -217,8 +218,8 @@ db.player_game.aggregate([
   {
     $lookup: {
         from: "team",
-        localField: "team_id",
-        foreignField: "team_id",
+        localField: "TEAM_ID",
+        foreignField: "TEAM_ID",
         as: "player_team_details"
     }
   }
