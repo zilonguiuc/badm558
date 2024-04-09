@@ -4,6 +4,8 @@ These are standard CRUD (Create, Read, Update, Delete) operations and other fund
 
 ## Loading Data (NBA data player_game.csv) into MongoDB
 
+https://raw.githubusercontent.com/zilonguiuc/BADM211/main/NBA/player_game.csv
+
 1. **Connect to your MongoDB instance using Compass.**
 2. **Select the desired database**, or create a new one.
 3. **Select the desired collection**, or create a new one.
