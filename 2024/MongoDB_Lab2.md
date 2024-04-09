@@ -225,6 +225,7 @@ db.player_game.aggregate([
   }
 ])
 ```
+The aggregation query's results are temporary and not saved because MongoDB's aggregation framework is designed to process and analyze data without altering the original collections.
 
 # 7.Create and drop database
 ## Create an new database called NBA2;
