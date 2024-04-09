@@ -146,8 +146,7 @@ db.player_game.createIndex({ COMMENT: "text" })
 db.player_game.find({ $text: { $search: "coach" } })
 ```
 
-**We can also search the comments containing coach use regular expression but it is much slower for big data**
-db.games.find({ COMMENT: /^coach/i })
+
 
 # 5.Data Manipulation Operations: Operations that modify the underlying data.
 ## Handling Missing Data:
