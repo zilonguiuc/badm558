@@ -210,6 +210,7 @@ db.player_game.find({ PTS: { $gt: 20 } }).explain()
 
 ## Join with another collection
 **First create another collection called team and load the data.**
+
 https://raw.githubusercontent.com/zilonguiuc/BADM211/main/NBA/team.csv
 
 **Joins the player_game collection with the team  collection based on team_id and places the result in the player_team_details array.**
