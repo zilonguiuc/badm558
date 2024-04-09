@@ -7,8 +7,8 @@ These are standard CRUD (Create, Read, Update, Delete) operations and other fund
 https://raw.githubusercontent.com/zilonguiuc/BADM211/main/NBA/player_game.csv
 
 1. **Connect to your MongoDB instance using Compass.**
-2. **Select the desired database**, or create a new one.
-3. **Select the desired collection**, or create a new one.
+2. **create a new database called "nba"**
+3. **create a new collection called "player_game"**
 4. **Add Data**: 
     - Once inside the collection, you'll see an `ADD DATA` dropdown on the right side.
     - Click it and select `Import File`.
