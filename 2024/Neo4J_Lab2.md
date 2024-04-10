@@ -1,4 +1,4 @@
-# Neo4j Lab 2
+# Neo4j Lab 2b
 
 ## 1.Setting Up & Loading Data:
 ### Open Neo4J
