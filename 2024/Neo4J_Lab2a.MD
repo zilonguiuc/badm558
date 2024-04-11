@@ -41,7 +41,7 @@ CREATE (alice)-[:WORKS_FOR {since: 2020}]->(acme)
 This creates a directed relationship labeled "WORKS_FOR" with a single property "since" set to 2020, connecting Alice to Acme.
 You can also create multiple relationships at once using the `CREATE` clause followed by a comma-separated list of relationships:
 ```css
-MATCH (bob:Person {name: 'Bob'}), (acme:Company {name: 'Acme'})
+MATCH (bob:Person {name: 'Bob'}), (acme:Company {name: 'Acme'}) ,(alice:Person {name: 'Alice'})
 CREATE (bob)-[:WORKS_FOR {since: 2015}]->(acme), (bob)-[:FRIEND_OF]->(alice)
 
 ```
