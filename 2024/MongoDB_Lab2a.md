@@ -49,7 +49,7 @@ db.player_game.find({ PTS: { $gt: 20 } })
 ```
 **Find players who scored between 21 to 29 points:**
 ```
-db.player_game.find({ PTS_: { $gt: 20, $lt: 30 } })
+db.player_game.find({ $and: [ { PTS: { $gt: 20 } }, { PTS: { $lt: 30 } } ] })
 ```
 **Find players who started in the Center (C) position:**
 ```
